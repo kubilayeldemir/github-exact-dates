@@ -1,23 +1,23 @@
 {
   "manifest_version": 3,
-  "name": "Github Show The Date",
-  "description": "Github Show The Date.",
+  "name": "Github Exact Dates",
+  "description": "Shows you the exact dates on github, instead of relative times.",
   "version": "1.0",
   "permissions": [
   ],
   "action": {
     "default_icon": {
-      "16": "images/icon16.png",
-      "48": "images/icon48.png",
-      "128": "images/icon128.png"
+      "16": "images/icon16.jpeg",
+      "32": "images/icon32.jpeg",
+      "48": "images/icon48.jpeg",
+      "128": "images/icon128.jpeg"
     },
     "default_popup": "popup.html"
   },
   "content_scripts": [
     {
       "matches": ["*://github.com/*"],
-      "js": ["content.js"],
-      "run_at": "document_idle"
+      "js": ["content.js"]
     }
   ]
 }
